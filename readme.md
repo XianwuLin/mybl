@@ -1,16 +1,14 @@
-# README  一个练手项目
-
+# README  
 
 ## 前言
 
 这个项目的功能是封禁某一个IP的请求。
 
-实现的方式是通过netfilter识别IP头的srcip，并与配置文件中的srcip比较，如果一致，则封禁。
+实现的方式是通过netfilter识别IP头的src_ip，并与配置文件中的src_ip比较，如果一致，则封禁。
 
 配置文件的下发使用了netlink。
 
-目的是为了熟悉用户态和内核态的通信和netfilter的应用。
-
+目的是为了熟悉用户态和内核态的通信和netfilter的应用，一个练手项目。
 
 ## 代码结构
 
